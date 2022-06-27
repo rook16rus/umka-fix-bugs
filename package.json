@@ -5,7 +5,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MelentQ/handlebars-boilerplate.git"
+    "url": "git+https://github.com/OakTre/umka-fix-bugs.git"
   },
   "main": "main.js",
   "scripts": {
