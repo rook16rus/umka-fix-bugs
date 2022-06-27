@@ -1,0 +1,68 @@
+:root {
+    /* Colors */
+    --main-primary: #0f1926;
+    --main-secondary: #a3afcd;
+    --main-tertiary: #f0f4fe;
+    --main-light-blue: #eff6ff;
+
+    --accent-primary: #1b74e3;
+    --accent-primary-hover: #185fb6;
+    --accent-secondary: #ee8e1e;
+
+    --bg-primary: #fcfdff;
+    --bg-secondary: #2f83eb;
+
+    --disabled: rgba(15, 25, 38, 0.3);
+
+    /* Containers */
+    --max-wide-container-width: 155rem;
+    --max-container-width: 135.5rem;
+    --content-padding: 3rem;
+    --content-mobile-padding: 1.5rem;
+
+    /* Font Family */
+    --main-ff: 'BebasNeue', sans-serif;
+    --secondary-ff: 'Montserrat',  sans-serif;
+
+    /* Font Weight */
+    --bold: 700;
+    --semi-bold: 600;
+    --medium: 500;
+    // Calc
+    --calc-title-S: calc(25px + (40 - 25) * (100vw - 360px) / (1920 - 360));
+    --calc--title-L: calc(40px + (85 - 40) * (100vw - 360px) / (1920 - 360));
+    --calc--title-XL: calc(40px + (100 - 40) * (100vw - 360px) / (1680 - 360));
+
+    /* Text */
+    --body-XX: var(--bold) 3rem/110% var(--main-ff);
+    --body-XL: var(--bold) 2.5rem/100% var(--main-ff);
+    --body-L-bold: var(--semi-bold) 1.8rem/125% var(--secondary-ff);
+    --body-L: var(--medium) 1.8rem/145% var(--secondary-ff);
+    --body-L-narrow: var(--medium) 1.8rem/125% var(--secondary-ff);
+    --body-M: var(--medium) 1.6rem/145% var(--secondary-ff);
+    --body-M-narrow: var(--medium) 1.6rem/125% var(--secondary-ff);
+    --body-S-bold: var(--semi-bold) 1.4rem/100% var(--secondary-ff);
+    --body-S: var(--medium) 1.4rem/125% var(--secondary-ff);
+
+    /* Titles */
+    --title-XL: var(--bold) 10rem/100% var(--main-ff);
+    --title-L: var(--bold) 8.5rem/100% var(--main-ff);
+    --title-M: var(--bold) 5.5rem/120% var(--main-ff);
+    --title-M-narrow: var(--bold) 5.5rem/100% var(--main-ff);
+    --title-S: var(--bold) 4rem/115% var(--main-ff);
+    --title-S-narrow: var(--bold) 4rem/100% var(--main-ff);
+
+    /* Other Typography */
+    --other-XL: var(--bold) 24.5rem/100% var(--main-ff);
+    --other-L: var(--bold) 2rem/100% var(--main-ff);
+    --other-M: var(--bold) 1.6rem/100% var(--main-ff);
+    --other-S-bold: var(--semi-bold) 1.2rem/120% var(--secondary-ff);
+    --other-S: var(--medium) 1.2rem/120% var(--secondary-ff);
+}
+
+$minWidth: 320;
+$maxWidth: 1680; // Ширина макета
+$base-transition-time: 0.3s;
+$base-transition-easing: ease;
+$overlay-color: rgba(0, 0, 0, 0.5);
+$modal-bg-color: white;

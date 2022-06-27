@@ -1,0 +1,332 @@
+.all {
+    position: relative;
+    padding-bottom: calc(53px + (100 - 53) * (100vw - 360px) / (1680 - 360));
+    padding-top: calc(32px + (80 - 32) * (100vw - 360px) / (1680 - 360));
+
+    @media (min-width: 1640px) {
+        padding: 80px 0;
+    }
+
+    &__wrapper {
+        padding: 0 9.7rem 0 9.8rem;
+        @media (max-width: 1150px) {
+            padding: 0 4rem;
+        }
+        @media (max-width: 994px) {
+            padding: 0;
+        }
+    }
+
+    &__title h2 {
+        opacity: 0;
+        font: var(--title-L);
+        font-size: calc(40px + (85 - 40) * (100vw - 360px) / (1680 - 360));
+        width: 73%;
+        @media (max-width: 1000px) {
+            padding-bottom: 3rem;
+        }
+    }
+
+    &__block {
+        background-image: url(../img/mapsvg.png);
+        background-repeat: no-repeat;
+        background-position: 0 90%;
+        @media (max-width: 1570px) {
+            background-size: 80%;
+            background-position: 0 70%;
+        }
+
+        @media (max-width: 1450px) {
+            background-position: 0 65%;
+        }
+
+        @media (max-width: 1300px) {
+            background-position: 0 60%;
+        }
+
+        @media (max-width: 1250px) {
+            background-size: 100%;
+            background-position: 0 90%;
+        }
+        @media (max-width: 1250px) {
+            background-position: 0 86%;
+        }
+        @media (max-width: 1140px) {
+            background-position: 0 69%;
+        }
+        @media (max-width: 1050px) {
+            background-position: 0 65%;
+        }
+        @media (max-width: 1000px) {
+            background: none;
+        }
+    }
+
+    &__container svg g:hover {
+        cursor: pointer;
+    }
+
+    &__container svg {
+        transition: opacity 0.5s linear;
+        @media (max-width: 1570px) {
+            flex: 0 0 56%;
+            padding-left: 1rem;
+        }
+        @media (max-width: 1250px) {
+            flex: 0 0 72%;
+            padding-left: 0;
+        }
+        @media (max-width: 1140px) {
+            margin-top: -7rem;
+        }
+        @media (max-width: 1050px) {
+            margin-top: -9rem;
+        }
+    }
+
+    &__container svg g:hover circle:nth-child(odd) {
+        fill: #1b74e3;
+    }
+
+    &__container svg g rect {
+        transition: opacity 0.5s linear;
+        opacity: 0;
+    }
+
+    &__container svg g path:nth-of-type(3) {
+        transition: opacity 0.5s linear;
+        opacity: 0;
+    }
+
+    &__container svg g:hover rect {
+        opacity: 1;
+    }
+
+    &__container svg g:hover circle:nth-child(even) {
+        fill: #fff;
+    }
+
+    &__container svg g path:nth-of-type(2) {
+        transition: opacity 0.5s linear;
+        opacity: 0;
+    }
+
+    &__container svg g:hover path:nth-of-type(1) {
+        opacity: 0;
+    }
+
+    &__container svg g:hover path:nth-of-type(2) {
+        opacity: 1;
+    }
+    &__container svg g:hover path:nth-of-type(3) {
+        opacity: 1;
+    }
+
+    &__container {
+        display: flex;
+        padding-top: 3.5rem;
+        justify-content: space-between;
+        padding-bottom: 6rem;
+        background-position: 0 100%;
+
+        @media (max-width: 1250px) {
+            padding-bottom: 0;
+        }
+        @media (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    &__three__elements-container {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1140px) {
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+    }
+
+    &__three__elements:not(:last-child) {
+        display: flex;
+        gap: 2rem;
+        position: relative;
+        padding-left: 9.5rem;
+        padding-top: 2rem;
+        @media (max-width: 1250px) {
+            flex: 0 0 33%;
+        }
+        @media (max-width: 1140px) {
+            flex: 0 0 100%;
+        }
+    }
+
+    &__three__elements:last-child {
+       @media (max-width: 500px) {
+            flex: 0 0 100%;
+        }
+    }
+
+    &__three__elements_title {
+        font: var(--title-S-narrow);
+        color: #1b74e3;
+        padding-bottom: 0.8rem;
+        @media (max-width: 1340px) {
+            font-size: 2.5rem;
+        }
+    }
+    &__three__elements_text {
+        font: var(--body-L-narrow);
+        color: #0f1926;
+        width: 29rem;
+        @media (max-width: 1250px) {
+            width: unset;
+        }
+        @media (max-width: 500px) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__three__image svg {
+        fill: none;
+        margin: 0 auto;
+    }
+    &__three__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__three__one-more {
+        background-color: #f0f4fe;
+        border-radius: 100rem;
+        width: 75px;
+        height: 75px;
+        align-items: center;
+        display: flex;
+    }
+
+    &__three__elements a{
+        // padding: 3rem 3rem 3rem 2.5rem;
+        width: 43.5rem;
+        justify-content: space-between;
+        padding-top: 2.8rem;
+
+        @media (max-width: 1340px) {
+            width: unset;
+            max-width: 40rem;
+        }
+        @media (max-width: 1250px) {
+            width: 100%;
+        }
+
+        @media (max-width: 500px) {
+            width: unset;
+            flex: unset;
+            width: 100%;
+            max-width: unset;
+            padding: 1rem 2.5rem;
+        }
+    }
+
+    &__three__elements svg {
+        fill: none;
+    }
+
+    &__cards__item {
+        position: absolute;
+        right: -4rem;
+        bottom: 1rem;
+        opacity: 0.5;
+        z-index: 0;
+        transition: opacity 0.5s linear;
+        border-radius: 1rem;
+        @media (max-width: 1570px) {
+            margin-left: auto;
+            padding-right: 2rem;
+            width: 80%;
+            bottom: 11rem;
+        }
+        @media (max-width: 1390px) {
+            width: 70%;
+            bottom: 16rem;
+        }
+        @media (max-width: 1250px) {
+            width: 100%;
+        }
+        @media (max-width: 1140px) {
+            bottom: 12rem;
+        }
+        @media (max-width: 1100px) {
+            bottom: 14rem;
+        }
+
+        @media (max-width: 1050px) {
+            bottom: 13rem;
+        }
+    }
+
+    &__cards__item img {
+        border-radius: 1rem;
+    }
+
+    &__cards {
+        position: relative;
+    }
+
+    &__cards__item.now {
+        position: relative;
+        flex: 0 0 50%;
+        padding-left: 0;
+        padding-top: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+        z-index: 10;
+        transition: opacity 0.5s linear;
+        border-radius: 1rem;
+        @media (max-width: 1250px) {
+            padding-top: 4rem;
+        }
+        @media (max-width: 1140px) {
+            padding-top: 1rem;
+        }
+    }
+
+    &__cards-hidden {
+        display: none;
+        @media (max-width: 1000px) {
+            display: block;
+            padding-bottom: 3rem;
+        }
+    }
+
+    & .swiper {
+        padding-bottom: 5rem;
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 2rem;
+        .swiper-slide {
+            opacity: 0;
+        }
+        .swiper-slide-active {
+            opacity: 1;
+        }
+        .swiper-slide-next {
+            opacity: 0.7;
+        }
+    }
+
+    & .swiper .swiper-slide-next {
+        padding-top: 6rem;
+        @media (max-width: 850px) {
+            padding-top: 4rem;
+        }
+        @media (max-width: 600px) {
+            padding-top: 3rem;
+        }
+    }
+
+    &__cards-hiden img {
+        border-radius: 1rem;
+    }
+}
