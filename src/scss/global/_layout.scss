@@ -74,6 +74,10 @@
     -webkit-text-fill-color: transparent;
     background-repeat: no-repeat;
     animation: animateText1 2s ease-in-out forwards;
+
+    h1, h2, h3, h2 {
+        opacity: 1 !important;
+    }
 }
 
 @keyframes animateText1 {
@@ -85,6 +89,18 @@
     100% {
         background-size: 100%;
         opacity: 1;
+    }
+}
+
+@keyframes animateTextOpacity1 {
+    from {
+        background-size: 0%;
+        opacity: 0 !important;
+    }
+
+    to {
+        background-size: 100%;
+        opacity: 1 !important;
     }
 }
 
@@ -210,33 +226,6 @@ a:hover {
 .thanks {
     .button {
         margin-top: calc(25px + (40 - 25) * (100vw - 360px) / (1680 - 360));
-    }
-}
-
-@media (min-width: 1681px) {
-    h1 {
-        font-size: 100px !important;
-    }
-
-    h2 {
-        font-size: 8.5rem !important;
-    }
-
-    // .callback__content-container__second-mobile a {
-    //     font-size: 8.5rem !important;
-    // }
-    // .callback__content-container__contacts-mobile a,
-    // .callback__content-container__second-callback p,
-    // .callback__content-container__first a {
-    //     font-size: 4rem !important;
-    // }
-    .plant__inner_slider-thanks-text strong {
-        font-size: 5.5rem !important;
-    }
-
-    .plant__inner_slider .video__icon,
-    .plant__title_inner strong {
-        font-size: 3rem !important;
     }
 }
 
