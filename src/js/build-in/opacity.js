@@ -4,6 +4,8 @@ export default window.onload = function opacity() {
     if (document.querySelector('.media')) {
         var box = document.getElementsByClassName('card');
 
+        if (!box) return;
+
         var btn = document.getElementById('loadMore');
         for (let i = 18; i < box.length; i++) {
             box[i].classList.add('hide');
