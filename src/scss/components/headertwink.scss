@@ -2,6 +2,10 @@
     @media (max-width: 500px) {
         padding: 0;
     }
+    .header__logo {
+        color: #1B74E3;
+    }
+
     .header__menu li a {
         color: var(--main-primary);
         font-size: 1.3rem;
@@ -76,7 +80,9 @@
         }
 
         .menu-burger__menu-column {
-            padding-top: 0;
+            @media (max-width: 500px) {
+                padding-top: 0;
+            }
         }
     }
 }
