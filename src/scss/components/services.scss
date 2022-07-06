@@ -58,10 +58,13 @@
         }
     }
     &__block-items {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8.3rem;
         margin-top: 6rem;
-        width: 63%;
+        max-width: 34.3rem;
         @media (max-width: 1279px) {
+            max-width: none;
             width: 100%;
         }
         @media (max-width: 533px) {
@@ -82,7 +85,6 @@
             }
         }
         p {
-            width: 50%;
             font-family: 'Montserrat', sans-serif;
             font-size: var(--body-L);
         }
