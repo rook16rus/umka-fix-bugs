@@ -8,6 +8,10 @@
     }
 }
 
+.plant + .contact__form {
+    padding-top: 0;
+}
+
 .plant__wrapper {
     .wide-container {
     }
@@ -380,7 +384,7 @@
             // padding: 2rem 2.5rem;
             gap: 3.6rem;
             width: 100%;
-            margin-top: 7rem;
+            margin-top: 4rem;
             white-space: nowrap;
             padding-top: 2.8rem;
 
@@ -400,7 +404,7 @@
             color: #fff;
             @media (max-width: 1023px) {
                 & {
-                    width: 50%;
+                    width: auto;
                 }
             }
             @media (max-width: 500px) {

@@ -30,9 +30,17 @@ export default window.onload = function opacity() {
             }
         });
 
+        const filterBtns = document.querySelectorAll('.media__filter-btn');
+
         for (let j = 0; j < box.length; j++) {
             document.querySelector('.btn_type_img').addEventListener('click', function () {
                 btn.style.display = 'none';
+
+                filterBtns.forEach(item => {
+                    item.classList.remove('active')
+                })
+                this.classList.add('active')
+
                 if (box[j].classList.contains('video')) {
                     box[j].classList.remove('show');
                     box[j].classList.add('hide');
@@ -41,6 +49,12 @@ export default window.onload = function opacity() {
 
             document.querySelector('.btn_type_video').addEventListener('click', function () {
                 btn.style.display = 'none';
+
+                filterBtns.forEach(item => {
+                    item.classList.remove('active')
+                })
+                this.classList.add('active')
+
                 if (box[j].classList.contains('images')) {
                     box[j].classList.remove('show');
                     box[j].classList.add('hide');

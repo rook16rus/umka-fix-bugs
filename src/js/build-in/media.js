@@ -25,9 +25,18 @@ export default function app() {
                 btn1.addEventListener('click', function () {
                     btn1.style.display = 'none';
                 });
+
+                const filterBtns = document.querySelectorAll('.media__filter-btn');
+
                 document.querySelector('.btn_type_all').addEventListener('click', function () {
                     btn1.style.display = 'flex';
                     item.classList.add('hide')
+
+                    filterBtns.forEach(item => {
+                        item.classList.remove('active')
+                    })
+                    this.classList.add('active')
+
                     for (let i = 0; i < items.length -2; i++) {
                         items[i].classList.remove('hide');
                     }
