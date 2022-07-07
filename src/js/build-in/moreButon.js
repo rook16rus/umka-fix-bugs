@@ -1,27 +1,26 @@
 export default function moreButon() {
-    const mediaQuery = window.matchMedia('(max-width: 789px)');
+    if(window.matchMedia('(min-width: 789px)').matches) return;
 
-    if (mediaQuery.matches) {
-        window.onload = function () {
-            let box = document.getElementsByClassName('why__item');
-            let btn = document.getElementById('why__button');
-            let count = box.length - 4;
-            document.getElementById('count').innerHTML = count;
-            for (let i = 4; i < box.length; i++) {
-                box[i].style.display = 'none';
-            }
+    const whySection = document.querySelector('.why');
+    if (!why) return;
 
-            let countD = 4;
-            btn.addEventListener('click', function () {
-                let box = document.getElementsByClassName('why__item');
-                countD += 4;
-                if (countD <= box.length) {
-                    for (let i = 0; i < countD; i++) {
-                        box[i].style.display = 'flex';
-                    }
-                }
-                btn.style.display = 'none';
-            });
-        };
-    }
+    const items = document.querySelectorAll('.why__item');
+    const button = document.querySelector('.why__button');
+    const count = document.querySelector('#count');
+    const visibleItemsCount = 4;
+    console.log(items);
+
+    count.innerHTML = items.length - 4 + '';
+
+    items.forEach((item, index) => {
+        if (index > 3) item.style.display = 'none';
+    })
+
+    button.addEventListener('click', function () {
+        button.style.display = 'none';
+
+        items.forEach((item, index) => {
+            if (index > 3) item.style.display = 'flex';
+        })
+    });
 }

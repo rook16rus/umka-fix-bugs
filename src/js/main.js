@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
     moreButon();
     initSliders();
     intro();
-    moreButon();
     editableTextContainer();
     swipercharacters();
     tabs();

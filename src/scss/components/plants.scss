@@ -22,6 +22,7 @@
     justify-content: space-between;
     gap: 4rem;
     margin-left: 10rem;
+    -webkit-text-fill-color: var(--main-primary);
 
     @media (max-width: 1279px) {
         & {
