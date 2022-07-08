@@ -2,7 +2,7 @@ export default function moreButon() {
     if(window.matchMedia('(min-width: 789px)').matches) return;
 
     const whySection = document.querySelector('.why');
-    if (!why) return;
+    if (!whySection) return;
 
     const items = document.querySelectorAll('.why__item');
     const button = document.querySelector('.why__button');
