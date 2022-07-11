@@ -33,7 +33,7 @@ export default function animateText() {
         })
 
         window.addEventListener('scroll', () => {
-            if(titleVideo[0].getBoundingClientRect().y <= 600) {
+            if(titleVideo[0].getBoundingClientRect().y <= 900) {
                 videoBlock.classList.add('active')
                 setTimeout(() => {
                     titleVideo.forEach(item=> {
