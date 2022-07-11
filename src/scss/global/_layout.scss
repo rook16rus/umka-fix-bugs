@@ -46,6 +46,163 @@
     font: var(--title-L);
 }
 
+.small-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 125%;
+    color: #495f73;
+
+    @include breakpoint(mobile) {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 100%;
+    }
+}
+
+.secondary-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.5rem;
+    line-height: 100%;
+
+    @include breakpoint(mobile) {
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 100%;
+    }
+}
+
+.text-input {
+    height: 6rem;
+    border: 2px solid #bed2e4;
+    border-radius: 2rem;
+    padding: 0 2.5rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 100%;
+    transition: color 0.2s, border-color 0.2s;
+    color: #011f3a;
+    width: 100%;
+
+    @include placeholder {
+        color: #bed2e4;
+    }
+
+    &--small {
+        height: 5.5rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 100%;
+        padding: 0 2rem;
+        border-radius: 1.5rem;
+    }
+
+    &:hover {
+        border-color: #495f73;
+    }
+
+    &:focus {
+        border-color: #148eff;
+        color: #011f3a;
+    }
+
+    &.parsley-error {
+        border-color: #148eff;
+    }
+
+    &--blue {
+        border-color: #148eff;
+        color: white;
+
+        &:hover {
+            border-color: #148eff;
+        }
+
+        &:focus {
+            border-color: #148eff;
+            color: white;
+        }
+        @include placeholder {
+            color: rgba(white, 0.5);
+        }
+    }
+
+    &--white {
+        border-color: rgba(white, 0.5);
+        color: white;
+        @include placeholder {
+            color: rgba(white, 0.5);
+        }
+
+        &:hover {
+            border-color: white;
+        }
+
+        &:focus {
+            border-color: #148eff;
+            color: white;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        height: 5rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 100%;
+        padding: 0 2rem;
+        border-radius: 1.5rem;
+        border-width: 1.5px;
+    }
+}
+
+.blue-btn {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 100%;
+    align-self: flex-start;
+    line-height: 100%;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 2rem 3rem;
+    background-color: #148eff;
+    color: white;
+    transition: background-color 0.2s, color 0.2s;
+    border-radius: 2rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+    justify-content: center;
+    text-align: center;
+    @include breakpoint(mobile) {
+        padding: 2rem 4rem;
+        border-radius: 1.5rem;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 100%;
+    }
+    &:link,
+    &:visited {
+        color: white;
+    }
+
+    .no-touch &:hover,
+    .touch &:active {
+        background-color: #1777cf;
+    }
+
+    &--orange {
+        background-color: #ed5835;
+
+        .no-touch &:hover,
+        .touch &:active {
+            background-color: #1777cf;
+        }
+    }
+}
+
 .main-title {
     font: var(--title-XL);
     color: #fff;

@@ -12,7 +12,6 @@ export default function animateText() {
             titleOrder     = document.querySelector('.order__inner-content-wrapper'),
             titleCenter    = document.querySelector('.all__title'),
             titlePlant     = document.querySelector('.plant__title'),
-            titleContact   = document.querySelector('.callback__content-container__first'),
             header         = document.querySelector('.header'),
             tabsAnimate    = document.querySelector('.intro-slider'),
             videoBlock     = document.querySelector('.overview__inner'),
@@ -71,9 +70,6 @@ export default function animateText() {
             }
             if(titlePlant.getBoundingClientRect().y <= 680) {
                 titlePlant.classList.add('animateTextBlack')
-            }
-            if(titleContact.getBoundingClientRect().y <= 780) {
-                titleContact.classList.add('animateTextWhite')
             }
         })
     }  else {
