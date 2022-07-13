@@ -35,6 +35,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import editableTextContainer from './custom/editableTextContainer';
+import contactsMap from "./build-in/contactsMap";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -72,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
     why();
     calculateConfig();
     animateText();
+    contactsMap();
 });
 
 document.addEventListener('lazyloaded', () => {

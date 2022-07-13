@@ -54,6 +54,12 @@
         margin-bottom: 6rem;
         font-size: calc(40px + (85 - 40) * (100vw - 360px) / (1680 - 360));
         opacity: 0;
+
+        @media (min-width: 1680px) {
+            padding: 0.6rem 0 0;
+            font-size: 8.5rem;
+            overflow: visible;
+        }
         
         @media (max-width: 958px) {
             margin-bottom: 3rem;
