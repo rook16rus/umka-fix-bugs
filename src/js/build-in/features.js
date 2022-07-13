@@ -5,16 +5,18 @@ export default function features() {
     if(card.length > 1) {
         for (let i = 0; i < point.children.length; i++) {
             point.children[i].querySelector('.features__item').addEventListener('mouseover', function (event) {
-                getImage();
+                getImage(i);
             });
         }
     }
 
-    function getImage() {
-        const random = Math.floor(Math.random() * card.length);
+    function getImage(index) {
         for (let i = 0; i < card.length; i++) {
-            card[i].classList.remove('now');
-            card[random].classList.add('now');
+            if (i === index) {
+                card[i].classList.add('now');
+            } else {
+                card[i].classList.remove('now');
+            }
         }
     }
 }
