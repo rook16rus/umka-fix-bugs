@@ -1285,7 +1285,7 @@
         <div class="contacts__row">
             <div class="contacts__col">
                 <h2 class="secondary-heading contacts__large-heading">
-                    Контакты
+                    Свяжитесь с нами
                 </h2>
                 <div class="contacts__inner-row">
                     <div class="contacts__inner-col">
@@ -1328,8 +1328,11 @@
                                 Обратный звонок
                             </h4>
                             <div class="contacts__form-row">
-                                <input type="tel" class="text-input contacts__form-input js-phone-input" name="phone"
-                                       required="" data-parsley-phone="" placeholder="+7 000 000-00-00">
+                                <div class="contacts__form-input-wrapper">
+                                    <input type="tel" class="text-input contacts__form-input js-phone-input" id="contactPhone" name="phone"
+                                           required="" data-parsley-phone="">
+                                    <label class="contacts__label" for="contactPhone">Ваш телефон</label>
+                                </div>
                                 <button type="submit" class="blue-btn contacts__form-submit">
                                     Отправить
                                 </button>

@@ -157,6 +157,7 @@
 }
 
 .blue-btn {
+    font-family: 'Bebas Neue', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 2rem;
@@ -175,6 +176,7 @@
     justify-content: center;
     text-align: center;
     transition: 0.3s;
+    font: var(--body-XL);
 
     @include breakpoint(mobile) {
         padding: 2rem 4rem;
