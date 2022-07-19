@@ -56,7 +56,7 @@
 
 .contacts__large-heading {
     font-size: var(--calc--title-L);;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'BebasNeue', -apple-system, sans-serif;
     margin-bottom: 5.5rem;
 
     @include breakpoint(mobile) {
@@ -139,6 +139,7 @@
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: stretch;
+        margin-bottom: 3rem;
     }
 }
 
@@ -146,8 +147,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     margin-right: 1.5rem;
+
+    @include breakpoint(mobile) {
+        margin-right: 0;
+    }
 
     &:hover input + label.contacts__label {
         font-size: 1.6rem;
@@ -424,7 +428,7 @@
 }
 
 .contacts__specialist-name {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'BebasNeue', -apple-system, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 1.8rem;
@@ -461,7 +465,7 @@
 
 .contacts__specialist-link {
     position: relative;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'BebasNeue', -apple-system, sans-serif;
     margin-top: auto;
     font-style: normal;
     font-weight: 600;
