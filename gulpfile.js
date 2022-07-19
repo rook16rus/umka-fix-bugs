@@ -38,14 +38,14 @@ gulp.task('sprite', function() {
                 },
                 transform: [
                     {svgo: {
-                        plugins: [
-                            { removeViewBox: false },
-                            { removeUselessStrokeAndFill: false },
-                            { cleanupIDs: false },
-                            { mergePaths: false },
-                            { removeUnknownsAndDefaults: false }
-                        ]
-                    }}
+                            plugins: [
+                                { removeViewBox: false },
+                                { removeUselessStrokeAndFill: false },
+                                { cleanupIDs: false },
+                                { mergePaths: false },
+                                { removeUnknownsAndDefaults: false }
+                            ]
+                        }}
                 ],
                 svg: {
                     xmlDeclaration: false,

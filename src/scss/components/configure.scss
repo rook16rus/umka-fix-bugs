@@ -755,11 +755,11 @@
         }
     }
 }
-.kisuzuCar .show , .tuazCar .show {
+[class$="isuzuCar"] .show , [class$="uazCar"] .show {
     opacity: 1;
 }
 
-.kisuzuCar .khide, .tuazCar .thide {
+[class$="isuzuCar"] [class$="hide"], [class$="uazCar"] [class$="hide"] {
     opacity: 0 ;
 }
 
