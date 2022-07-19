@@ -179,7 +179,7 @@ export default function calculateConfig() {
             }
 
             if(selectedConfig === arrOfUaz) {
-                animateConstruct('[class$="uazCar"]', nameConfig, 'vhide')
+                animateConstruct('[class$="uazCar"]', nameConfig, 'uhide')
             }else {
                 animateConstruct('[class$="isuzuCar"]', nameConfig, 'lhide')
             }
@@ -264,7 +264,7 @@ export default function calculateConfig() {
                     document.querySelector('[class$="uazCar"]').querySelector('[data-option="Емкость для воды 2,0 куб. м."]').classList.contains('show')
                 ) {
                     document.querySelector('[class$="uazCar"]').querySelector('[data-option="Емкость для воды 2,0 куб. м."]').classList.remove('show')
-                    document.querySelector('[class$="uazCar"]').querySelector('[data-option="Емкость для воды 2,0 куб. м."]').classList.add('vhide')
+                    document.querySelector('[class$="uazCar"]').querySelector('[data-option="Емкость для воды 2,0 куб. м."]').classList.add('uhide')
                 }
                 else if (
                     item.getAttribute('data-configname') === 'Ледозаливочное оборудование «Умка»' &&
@@ -280,7 +280,7 @@ export default function calculateConfig() {
                     document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.contains('show')
                 ) {
                     document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.remove('show')
-                    document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.add('vhide')
+                    document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.add('uhide')
                 }
                 else if (
                     item.getAttribute('data-configname') === 'Емкость для воды 2,0 куб. м.' &&
@@ -291,7 +291,7 @@ export default function calculateConfig() {
                     document.querySelector('[class$="isuzuCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.add('lhide')
                 }
                 if(configOfUaz.classList.contains('tab-content_show')) {
-                    showOrHideSvgElement('plus', item, uazElementOfSVG, arrOfUaz, 'vhide', configOfUaz)
+                    showOrHideSvgElement('plus', item, uazElementOfSVG, arrOfUaz, 'uhide', configOfUaz)
                 }else {
                     showOrHideSvgElement('plus', item, isuzuElementOfSVG, arrOfIsuzu, 'lhide', configOfIsuzu)
                 }
@@ -304,10 +304,10 @@ export default function calculateConfig() {
                             elemHide.checked = false
                             if(configCar == configOfUaz && uazElementOfSVG.querySelector(`[data-option="${elemHide.getAttribute('data-configname')}"]`).classList.contains('show')) {
                                 uazElementOfSVG.querySelector(`[data-option="${elemHide.getAttribute('data-configname')}"]`).classList.remove('show')
-                                uazElementOfSVG.querySelector(`[data-option="${elemHide.getAttribute('data-configname')}"]`).classList.add('vhide')
+                                uazElementOfSVG.querySelector(`[data-option="${elemHide.getAttribute('data-configname')}"]`).classList.add('uhide')
                             }else if(configCar == configOfIsuzu && isuzuElementOfSVG.querySelector(`[data-option="${elemHide.getAttribute('data-configname')}"]`).classList.contains('show')) {
                                 isuzuElementOfSVG.querySelector(`[data-option="${elemHide.getAttribute('data-configname')}"]`).classList.remove('show')
-                                isuzuElementOfSVG.querySelector(`[data-option="${elemHide.getAttribute('data-configname')}"]`).classList.add('vhide')
+                                isuzuElementOfSVG.querySelector(`[data-option="${elemHide.getAttribute('data-configname')}"]`).classList.add('uhide')
                             }
                         }
                     })
@@ -317,10 +317,10 @@ export default function calculateConfig() {
                         configCar.querySelector('[data-configname="Агрегат фронтальной мойки (АФМ)"]').checked = false
                         if(
                             document.querySelector('[data-carName="uaz"]').classList.contains('active') &&
-                            document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.contains('vhide') &&
+                            document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.contains('uhide') &&
                             configCar.querySelector('[data-configname="Ледозаливочное оборудование «Умка»"]').checked == true
                         ) {
-                            document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.remove('vhide')
+                            document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.remove('uhide')
                             document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.add('show')
                         }
                         if(
@@ -333,10 +333,10 @@ export default function calculateConfig() {
                         }
                     }else if (
                         document.querySelector('[data-carName="uaz"]').classList.contains('active') &&
-                        document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.contains('vhide') &&
+                        document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.contains('uhide') &&
                         configCar.querySelector('[data-configname="Ледозаливочное оборудование «Умка»"]').checked == true
                     ) {
-                        document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.remove('vhide')
+                        document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.remove('uhide')
                         document.querySelector('[class$="uazCar"]').querySelector('[data-option="Ледозаливочное оборудование «Умка»"]').classList.add('show')
                     }
                     else if (
@@ -350,10 +350,10 @@ export default function calculateConfig() {
                 }else if(
                     item.getAttribute('data-configname') === 'Ледозаливочное оборудование «Умка»' &&
                     document.querySelector('[data-carName="uaz"]').classList.contains('active') &&
-                    document.querySelector('[class$="uazCar"]').querySelector('[data-option="Емкость для воды 2,0 куб. м."]').classList.contains('vhide') &&
+                    document.querySelector('[class$="uazCar"]').querySelector('[data-option="Емкость для воды 2,0 куб. м."]').classList.contains('uhide') &&
                     configCar.querySelector('[data-configname="Емкость для воды 2,0 куб. м."]').checked == true
                 ) {
-                    document.querySelector('[class$="uazCar"]').querySelector('[data-option="Емкость для воды 2,0 куб. м."]').classList.remove('vhide')
+                    document.querySelector('[class$="uazCar"]').querySelector('[data-option="Емкость для воды 2,0 куб. м."]').classList.remove('uhide')
                     document.querySelector('[class$="uazCar"]').querySelector('[data-option="Емкость для воды 2,0 куб. м."]').classList.add('show')
                 }
                 else if(
@@ -366,7 +366,7 @@ export default function calculateConfig() {
                     document.querySelector('[class$="isuzuCar"]').querySelector('[data-option="Емкость для воды 2,0 куб. м."]').classList.add('show')
                 }
                 if(configOfUaz.classList.contains('tab-content_show')) {
-                    showOrHideSvgElement('minus', item, uazElementOfSVG, arrOfUaz, 'vhide', configOfUaz, '.vhide',)
+                    showOrHideSvgElement('minus', item, uazElementOfSVG, arrOfUaz, 'uhide', configOfUaz, '.uhide',)
                 }else {
                     showOrHideSvgElement('minus', item, isuzuElementOfSVG, arrOfIsuzu, 'lhide', configOfIsuzu, '.lhide')
                 }
