@@ -1,5 +1,6 @@
 export default function contactsMap() {
     const elements = Array.from(document.querySelectorAll('.js-contacts-map'));
+    console.log(elements)
 
     elements.forEach(element => {
         ymaps.ready(initMap);

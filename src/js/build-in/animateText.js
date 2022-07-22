@@ -74,7 +74,7 @@ export default function animateText() {
         })
     }  else {
         document.querySelector('.header').classList.add('active')
-        document.querySelector('.callback__content-container__first h2').classList.add('animateTextWhite')
+        document.querySelector('.callback__content-container__first h2') ? document.querySelector('.callback__content-container__first h2').classList.add('animateTextWhite') : null;
     } 
 }
 

@@ -1,9 +1,78 @@
 {{#extend "layouttwink"}}
 {{#content "main"}}
 
-<section class="contact__form">
- {{> formContacts }}
- </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__row">
+                <div class="contacts__col">
+                    <h2 class="secondary-heading contacts__large-heading">
+                        Свяжитесь с нами
+                    </h2>
+                    <div class="contacts__inner-row">
+                        <div class="contacts__inner-col">
+                            <div class="contacts__specialist">
+                                <div class="contacts__specialist-photo-container">
+                                    <img data-src="img/specialist.jpg" alt="" class="contacts__specialist-photo lazyload">
+                                </div>
+                                <div class="contacts__specialist-col">
+                                    <div class="contacts__specialist-name">
+                                        Алёна Аношина
+                                    </div>
+                                    <div class="contacts__specialist-text">
+                                        <p>
+                                            Позвоните для консультации
+                                            эксперту компании
+                                        </p>
+                                    </div>
+                                    <a href="tel:88000008888"
+                                       class="contacts__specialist-link contacts__specialist-link--phone"><span>8 800
+                                        000-88-88</span></a>
+                                </div>
+                                <div class="contacts__specialist-col">
+                                    <div class="contacts__specialist-online">
+                                        Работаем сейчас
+                                    </div>
+                                    <a href="mailto:nms@sportlp.ru"
+                                       class="contacts__specialist-link contacts__specialist-link--email"><span>nms@sportlp.ru</span></a>
+                                </div>
+                            </div>
+                            <a href="#" class="contacts__go-to-office">
+                                Пишите прямо сейчас, мы онлайн
+                                <img data-src="img/whatsapp.svg" alt="" class="contacts__go-to-office-icon lazyload">
+                            </a>
+                            <div class="contacts__address">
+                                Казань, ул. Кул Гали, 7б
+                            </div>
+
+                            <form action="/" method="POST" class="contacts__form" data-need-validation="">
+                                <h4 class="contacts__form-heading">
+                                    Обратный звонок
+                                </h4>
+                                <div class="contacts__form-row">
+                                    <div class="contacts__form-input-wrapper">
+                                        <input type="tel" class="text-input contacts__form-input js-phone-input" id="contactPhone" name="phone"
+                                               required="" data-parsley-phone="">
+                                        <label class="contacts__label" for="contactPhone">Ваш телефон</label>
+                                    </div>
+                                    <button type="submit" class="blue-btn contacts__form-submit">
+                                        Отправить
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="contacts__inner-col">
+                            <div class="contacts__map-wrapper">
+                                <div class="contacts__map js-contacts-map" data-location="55.725823, 49.189266"
+                                     data-pin="img/pin.svg">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 <section class="map ">
     <div class="wide-container">
         <div class="map__wrapper map_contacts">
