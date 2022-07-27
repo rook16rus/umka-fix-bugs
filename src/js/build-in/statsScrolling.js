@@ -8,7 +8,6 @@ export default function statsScrolling() {
 
     if (matchMedia('(max-height: 900px)').matches) {
         window.addEventListener('scroll', () => {
-            console.log('bye')
             if(list.length > 1 && window.innerWidth > 1024) {
                 if(listItem1.getBoundingClientRect().top < 110 && !listImg1.classList.contains('stats-img-hide')) {
                     listImg1.classList.add('stats-img-hide')
@@ -28,7 +27,6 @@ export default function statsScrolling() {
         })
     } else {
         window.addEventListener('scroll', () => {
-            console.log('hello')
             if(list.length > 1 && window.innerWidth > 1024) {
                 if(listItem1.getBoundingClientRect().top < 500 && !listImg1.classList.contains('stats-img-hide')) {
                     listImg1.classList.add('stats-img-hide')
